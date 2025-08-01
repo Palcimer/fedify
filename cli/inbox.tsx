@@ -413,7 +413,7 @@ async function printActivityEntry(
     [
       new Cell("Activity type:").align("right"),
       activity == null ? colors.red("failed to parse") : colors.green(
-        `${activity.constructor.name}(${object.constructor.name})`,
+        `${activity.constructor.name}(${object?.constructor.name})`,
       ),
     ],
     [
